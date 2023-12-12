@@ -1,9 +1,14 @@
-# how-to-customize-the-message-view-in-.net-maui-popup
-The demo explains about how to customize the custom message view template in .NET MAUI Popup (SfPopup).
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
+             x:Class="MauiPopup.MainPage"
+             xmlns:local="clr-namespace:MauiPopup">
 
-In .NET MAUI, the Popup control provides a flexible way to display transient content. It can be customized to include various elements such as buttons or even complex view. This article will guide you through the process of customizing the content of a .NET MAUI Popup using the ContentTemplate property.
-For example you can display the Login page inside the .NET MAUI Popup refer the below.
-XAML
+    <ContentPage.Behaviors>
+        <local:PopupBehavior x:Name="popupBehavior" />
+    </ContentPage.Behaviors>
+
     <StackLayout x:Name="mainLayout">
         <Button x:Name="clickToShowPopup"
                 Text="ClickToShowPopup"
@@ -27,3 +32,5 @@ XAML
             </sfPopup:SfPopup.ContentTemplate>
         </sfPopup:SfPopup>
     </StackLayout>
+
+</ContentPage>
