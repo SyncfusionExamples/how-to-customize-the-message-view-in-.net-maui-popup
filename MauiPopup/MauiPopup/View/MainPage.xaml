@@ -12,8 +12,7 @@
     <StackLayout x:Name="mainLayout">
         <Button x:Name="clickToShowPopup"
                 Text="ClickToShowPopup"
-                VerticalOptions="Start"
-                HorizontalOptions="FillAndExpand" />
+                VerticalOptions="Start" />
 
         <sfPopup:SfPopup x:Name="popup"
                          AppearanceMode="TwoButton"
